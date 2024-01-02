@@ -14,6 +14,14 @@
         --c5: #E0EFDD;
     }
 
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    a:hover{
+        color: var(--c1);
+    }
+
     body{
     width: 100vw;
     height: 100vh;
@@ -24,6 +32,19 @@
     header{
         width: 100vw;
         height: 5vh;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .definicoes{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        padding: 3px;
+    }
+    .definicoes:hover{
+        border-radius: 50%;
+        background-color: var(--c4);
     }
 
     main{
@@ -35,13 +56,15 @@
         justify-content: center;
 
     }
-    section.formulario{
+    main > .formulario{
         width: 320px;
         height: auto;
-        border-radius: 5px;
-        background-color: red;
+        border-radius: 10px;
+        box-shadow: 1.5px 1.5px 4px rgba(0, 0, 0, 0.427);
+        display: flex;
+        justify-content: center;
     }
-    section.formulario > form{
+    .formulario > form{
         width: 100%;
         background-color: white;
         display: flex;
@@ -50,7 +73,7 @@
         justify-content: center;
     }
     div.telefone, div.senha {
-        width: 100%;
+        width: 90%;
         display: flex;
         align-self: center;
         margin-top: 2px;
@@ -68,10 +91,14 @@
         flex-direction: row;
         justify-content: center;
     }
+    div.telefone{
+        margin-top: 7%;
+    }
     label{
         font-size: 1.5vh;
     }
     input[type = 'tel'], input[type = 'password']{
+        width: 100%;
         padding: 7px;
         border: 1px solid var(--c3);
         border-radius: 6px;
@@ -79,7 +106,8 @@
     }
     
     input[type = 'submit']{
-        
+        margin-top: 7%;
+        margin-bottom: 7%;
         padding: 7px;
         border: none;
         background-color: #35794B;
@@ -101,7 +129,7 @@
         width: 80%;
         height: 1px;
     }
-    a{
+    a.criar{
         margin-top: 5%;
         text-decoration: none;
         color: white;
@@ -111,8 +139,75 @@
     }
 
     footer{
+        position: relative;
         height: 15vh;
         width: 100vw;
         background-color: lightgray;
     }
+/*
+CONFIGURACAO PARA MOSTRAR OS IDIOMAS NA TELA
+*/
+.ofuscar_tela{
+    position: absolute;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.381);
+    z-index: 2;
+    display: none;
+}
+.idiomas_desponiveis{
+    width: 80%;
+    border-radius: 10px;
+    height: 40%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+    display: none;
+}
+button.idioma{
+    border: none;
+    background-color: white;
+
+}
+
+
+.fechar_aba{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
     
+}
+.fechar_aba > button{
+    background-color: white;
+    text-align: center;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-right: 4px;
+}
+.fechar_aba > button:hover{
+    background-color: var(--c4);
+    border-radius: 100%;
+}
+.paragrafo_idiomas > p{
+   padding: 4px;
+}
+.paragrafo_idiomas > p:hover{
+   background-color: var(--c4);
+}
+/*
+ESTAS CONFIRACOES TERMINAM AQUI
+
+*/
