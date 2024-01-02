@@ -144,6 +144,32 @@
         width: 100vw;
         background-color: lightgray;
     }
+
+    .todas_definicoes{
+        position: absolute;
+        top: 10px;
+        left: 65vw;
+        width: 150px;
+        height: 100px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 1.5px 1.5px 4px rgba(0, 0, 0, 0.427);
+        display: none;
+     }
+     .todas_definicoes > div{
+        padding: 4px;
+     }
+     .todas_definicoes > div:hover{
+        background-color: var(--c4);
+     }
+     .todas_definicoes > div > a{
+        color: black;
+     }
+     .retirar_def{
+        width: 100vw;
+        height: 100vh;
+     }
+
 /*
 CONFIGURACAO PARA MOSTRAR OS IDIOMAS NA TELA
 */
