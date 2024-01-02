@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela De Login</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="stylesheet" href="estilo/estilo.css">
+    <link rel="stylesheet" href="estilo/query.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><strong>HUSTLE</strong></div>
+    </header>
+    <main>
+        <secction class="formulario">
+            <form action="#" method="post">
+                <div class="telefone">
+                    <label for="telefone"><span class="material-icons">person</span></label>
+                    <input type="tel" name="telefone" id="telefone" placeholder="telefone" required>
+                </div>
+                <div class="senha">
+                    <label for="telefone"><span class="material-icons">key</span></label>
+                    <input type="password" name="senha" id="senha" placeholder="senha" required minlength="4" maxlength="8">
+                </div>
+                <div class="enviar">
+                    <input type="submit" value="Entrar">
+                </div>
+            </form>
+        </secction>
+        <div class="criar_conta">
+            <hr>
+            <a href="{{url('login')}}">Criar conta</a>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
