@@ -85,13 +85,14 @@
 
     }
     main > .formulario{
-        
+
         width: 320px;
         height: auto;
         border-radius: 10px;
-        box-shadow: 1.5px 1.5px 4px rgba(0, 0, 0, 0.427);
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.158);
         display: flex;
         justify-content: center;
+        flex-direction: column;
 
     }
     .formulario > form{
@@ -149,11 +150,11 @@
         background-color: #35794B;
         color: white;
         border-radius: 3px;
-        width: 100px;
+        width: 150px;
         cursor: pointer;
     }
     .Esqueceu_senha{
-        margin-left: -190px;
+        margin-left: 2%;
         margin-top: 5%;
         margin-bottom: 5%;
         
@@ -162,6 +163,7 @@
         color: blue;
     }
     .criar_conta{
+       margin-top: 10%;
         width: 320px;
         display: flex;
         flex-direction: column;
