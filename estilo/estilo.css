@@ -34,6 +34,7 @@
         height: 5vh;
         display: flex;
         justify-content: space-between;
+
     }
 
     .logo{
@@ -82,6 +83,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        justify-content: space-around;
 
     }
     main > .formulario{
