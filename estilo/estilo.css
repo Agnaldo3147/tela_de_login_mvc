@@ -156,14 +156,14 @@
     }
     .Esqueceu_senha{
         margin-left: -190px;
+        margin-top: -20%;
         
     }
     .Esqueceu_senha > a:hover{
         color: blue;
     }
     .criar_conta{
-        
-        margin-bottom: 15%;
+        margin-top: -30%;
         width: 320px;
         display: flex;
         flex-direction: column;
