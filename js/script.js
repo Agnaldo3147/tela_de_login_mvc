@@ -66,7 +66,7 @@ ofuscar_tela.addEventListener('click', ()=>{
 const logo_promise = document.querySelector('.logo_promise')
 
     var promise = new Promise((deu_certo, deu_errado)=>{
-    let Tempo = 2000
+    let Tempo = 2500
 
     setTimeout(()=>{
         deu_certo(logo_promise)
