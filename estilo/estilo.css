@@ -25,15 +25,18 @@
     body{
     width: 100vw;
     height: 100vh;
+    
     }
     html{
         font-family: Arial, Helvetica, sans-serif;
     }
     header{
         width: 100vw;
-        height: 5vh;
+        height: 10vh;
         display: flex;
+        align-items: center;
         justify-content: space-between;
+        background-color: #35794B;
     }
 
     .logo{
@@ -68,6 +71,7 @@
         align-items: center;
         cursor: pointer;
         padding: 3px;
+        color: lightgray;
     }
     .definicoes:hover{
         border-radius: 50%;
@@ -77,12 +81,12 @@
 
     main{
         width: 100vw;
-        height: 95vh;
+        height: 90vh;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-
+        background-color: #E0EFDD;
     }
     main > .formulario{
         margin-top: -10%;
@@ -96,6 +100,7 @@
 
     }
     .formulario > form{
+        border-radius: 10px 10px 0px 0px;
         width: 100%;
         background-color: white;
         display: flex;
