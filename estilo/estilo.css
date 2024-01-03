@@ -216,11 +216,11 @@
      CLASSES PARA MOSTRAR AS DEFINIÇÕES
      */
      .motrar_todas_def{
-        top: 40px !important;
+        top: 30px !important;
        
      }
      .esconder_todas_def{
-        top: -190px !important;
+        top: -160px !important;
      }
      .sobrepor{
         z-index: 1 !important;
