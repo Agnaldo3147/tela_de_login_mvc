@@ -34,7 +34,6 @@
         height: 5vh;
         display: flex;
         justify-content: space-between;
-
     }
 
     .logo{
@@ -83,16 +82,19 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        justify-content: space-around;
+        justify-content: space-between;
+        
 
     }
     main > .formulario{
+        
         width: 320px;
         height: auto;
         border-radius: 10px;
         box-shadow: 1.5px 1.5px 4px rgba(0, 0, 0, 0.427);
         display: flex;
         justify-content: center;
+
     }
     .formulario > form{
         width: 100%;
@@ -154,14 +156,14 @@
     }
     .Esqueceu_senha{
         margin-left: -190px;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        
     }
     .Esqueceu_senha > a:hover{
         color: blue;
     }
     .criar_conta{
-        margin-top: 10%;
+        
+        margin-bottom: 15%;
         width: 320px;
         display: flex;
         flex-direction: column;
@@ -169,7 +171,7 @@
     }
     
     hr{
-        margin-top: -20px;
+        
         width: 80%;
         height: 1px;
     }
