@@ -150,12 +150,12 @@
         width: 100px;
         cursor: pointer;
     }
-    form > p{
-        margin-left: -120px;
+    .Esqueceu_senha{
+        margin-left: -190px;
         margin-top: 20px;
         margin-bottom: 20px;
     }
-    form > p > a:hover{
+    .Esqueceu_senha > a:hover{
         color: blue;
     }
     .criar_conta{
@@ -167,6 +167,7 @@
     }
     
     hr{
+        margin-top: -20px;
         width: 80%;
         height: 1px;
     }
@@ -215,7 +216,7 @@
      CLASSES PARA MOSTRAR AS DEFINIÇÕES
      */
      .motrar_todas_def{
-        top: 30px !important;
+        top: 40px !important;
        
      }
      .esconder_todas_def{
