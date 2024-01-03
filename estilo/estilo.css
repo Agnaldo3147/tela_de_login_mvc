@@ -225,11 +225,11 @@
      CLASSES PARA MOSTRAR AS DEFINIÇÕES
      */
      .motrar_todas_def{
-        top: 30px !important;
+        top: 45px !important;
        
      }
      .esconder_todas_def{
-        top: -180px !important;
+        top: -2000px !important;
      }
      .sobrepor{
         z-index: 1 !important;
