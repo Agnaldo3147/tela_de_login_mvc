@@ -36,7 +36,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background-color: var(--c3);
+        background-color: var(--c1);
     }
 
     .logo{
