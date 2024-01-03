@@ -257,9 +257,9 @@ CONFIGURACAO PARA MOSTRAR OS IDIOMAS NA TELA
     display: none;
 }
 .idiomas_desponiveis{
-    width: 80%;
+    width: 90%;
     border-radius: 20px;
-    height: auto;
+    height: 65%;
     background-color: rgba(0, 0, 0, 0.877);
     position: absolute;
     top: 50%;
