@@ -36,6 +36,33 @@
         justify-content: space-between;
     }
 
+    .logo{
+        font-size: 1.2em;
+        padding: 5px;
+    }
+
+    .logo_promise{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--c5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .logo_promise > p{
+        width: 105px;
+        height: auto;
+        padding: 5px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.863);
+        font-size: 1.5em;
+    }
+
     .definicoes{
         display: flex;
         align-items: center;
@@ -44,12 +71,13 @@
     }
     .definicoes:hover{
         border-radius: 50%;
-        background-color: var(--c4);
+        background-color: rgba(211, 211, 211, 0.546);
+        
     }
 
     main{
         width: 100vw;
-        height: 80vh;
+        height: 95vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -80,10 +108,15 @@
         margin-bottom: 2px;
         border-radius: 6px;
         padding: 2px;
-        background-color: var(--c4);
+        background-color: var(--c2);
     }
     div.telefone, div.senha{
         margin-bottom: 4px;
+    }
+
+    div.senha{
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
     
     div.enviar{
@@ -104,6 +137,7 @@
         border-radius: 6px;
         outline-color: var(--c1);
     }
+
     
     input[type = 'submit']{
         margin-top: 7%;
@@ -116,7 +150,14 @@
         width: 100px;
         cursor: pointer;
     }
-
+    form > p{
+        margin-left: -120px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    form > p > a:hover{
+        color: blue;
+    }
     .criar_conta{
         margin-top: 10%;
         width: 320px;
@@ -146,29 +187,48 @@
     }
 
     .todas_definicoes{
-        position: absolute;
-        top: 10px;
-        left: 65vw;
-        width: 150px;
-        height: 100px;
+        width: 60%;
+        height: auto;
         background-color: white;
         border-radius: 10px;
         box-shadow: 1.5px 1.5px 4px rgba(0, 0, 0, 0.427);
-        display: none;
+        position: absolute;
+        top: -160px;
+        left: calc(100vw - 62%); 
+        display: block;
+        z-index: 2;
+        transition: top .3s;
+       
      }
      .todas_definicoes > div{
-        padding: 4px;
+        padding: 7px;
+        margin-left: 3px;
+        margin-top: 4px;
      }
      .todas_definicoes > div:hover{
-        background-color: var(--c4);
+        background-color: rgba(211, 211, 211, 0.546);
      }
      .todas_definicoes > div > a{
         color: black;
      }
-     .retirar_def{
-        width: 100vw;
-        height: 100vh;
+     /*
+     CLASSES PARA MOSTRAR AS DEFINIÇÕES
+     */
+     .motrar_todas_def{
+        top: 30px !important;
+       
      }
+     .esconder_todas_def{
+        top: -160px !important;
+     }
+     .sobrepor{
+        z-index: 1 !important;
+    }
+
+     /*
+     AS CLASSES TERMINAM AQUI
+     */
+    
 
 /*
 CONFIGURACAO PARA MOSTRAR OS IDIOMAS NA TELA
@@ -186,9 +246,9 @@ CONFIGURACAO PARA MOSTRAR OS IDIOMAS NA TELA
 }
 .idiomas_desponiveis{
     width: 80%;
-    border-radius: 10px;
-    height: 40%;
-    background-color: white;
+    border-radius: 20px;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0.877);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -200,8 +260,6 @@ CONFIGURACAO PARA MOSTRAR OS IDIOMAS NA TELA
 }
 button.idioma{
     border: none;
-    background-color: white;
-
 }
 
 
@@ -212,8 +270,8 @@ button.idioma{
     justify-content: flex-end;
     
 }
-.fechar_aba > button{
-    background-color: white;
+.fechar_aba > div{
+    color: white;
     text-align: center;
     font-size: 1.1em;
     border: none;
@@ -223,15 +281,22 @@ button.idioma{
     align-items: center;
     margin-right: 4px;
 }
-.fechar_aba > button:hover{
-    background-color: var(--c4);
+.fechar_aba > div:hover{
+    background-color: rgba(211, 211, 211, 0.546);
     border-radius: 100%;
 }
+.paragrafo_idiomas{
+    scroll-behavior: auto;
+}
+
 .paragrafo_idiomas > p{
-   padding: 4px;
+    border: none;
+    padding: 4px;
+    color: white;
+    margin-left: 10px;
 }
 .paragrafo_idiomas > p:hover{
-   background-color: var(--c4);
+   background-color: rgba(211, 211, 211, 0.429);
 }
 /*
 ESTAS CONFIRACOES TERMINAM AQUI

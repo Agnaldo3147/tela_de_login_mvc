@@ -10,26 +10,27 @@
     <link rel="stylesheet" href="estilo/query.css">
 </head>
 <body class="body">
-    <header>
+    <header class="header">
         <div class="logo"><strong>HUSTLE</strong></div>
         <div class="definicoes"><span class="material-icons">
             more_vert
             </span></div>
     </header>
-    <main>
+    <main class="main">
         <secction class="formulario">
             <form action="#" method="post">
                 <div class="telefone">
-                    <label for="telefone"><span class="material-icons">person</span></label>
-                    <input type="tel" name="telefone" id="telefone" placeholder="telefone" required>
+                    <label for="telefone"><span class="material-icons" style="color: lightgray;">person</span></label>
+                    <input type="tel" name="telefone" id="telefone" placeholder="Telefone" required>
                 </div>
                 <div class="senha">
-                    <label for="telefone"><span class="material-icons">key</span></label>
-                    <input type="password" name="senha" id="senha" placeholder="senha" required minlength="4" maxlength="8">
+                    <label for="telefone"><span class="material-icons" style="color: lightgray;" >key</span></label>
+                    <input type="password" name="senha" id="senha" placeholder="Senha" required minlength="4" maxlength="8">
                 </div>
                 <div class="enviar">
                     <input type="submit" value="Entrar">
                 </div>
+                <p><a href="">Esqueceu sua senha?</a></p>
             </form>
         </secction>
         <div class="criar_conta">
@@ -37,19 +38,28 @@
             <a href="{{url('login')}}" class="criar">Criar conta</a>
         </div>
     </main>
-    <footer>
-        
-    </footer>
+    
     <div class="todas_definicoes">
         <div class="idioma">idioma</div>
-        <div><a href="">ajuda</a></div>
-        <div><a href="">privacidade</a></div>
+        <div><a href="" target="_blank">termos e políticas de privacidade</a></div>
+        <div><a href="" target="_blank">sobre</a></div>
+        <div><a href="" target="_blank">ajuda</a></div>
     </div>
     <div class="idiomas_desponiveis">
         <div class="fechar_aba">
-            <button>x</button>
+            <div>x</div>
         </div>
         <div class="paragrafo_idiomas">
+            <p>Portugues</p>
+            <p>Portugues</p>
+            <p>Portugues</p>
+            <p>Portugues</p>
+            <p>Portugues</p>
+            <p>Portugues</p>
+            <p>Portugues</p>
+            <p>Portugues</p>
+            <p>Portugues</p>
+            <p>Portugues</p>
             <p>Portugues</p>
             <p>Portugues</p>
             <p>Portugues</p>
@@ -61,6 +71,9 @@
     </div>
     <div class="ofuscar_tela">
 
+    </div>
+    <div class="logo_promise">
+        <p><strong>HUSTLE</strong></p>
     </div>
 
     <script src="js/script.js"></script>
