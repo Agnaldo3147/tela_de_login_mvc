@@ -82,7 +82,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        justify-content: space-between;
+        justify-content: space-around;
         
 
     }
@@ -156,14 +156,14 @@
     }
     .Esqueceu_senha{
         margin-left: -190px;
-        margin-top: -20%;
+        
         
     }
     .Esqueceu_senha > a:hover{
         color: blue;
     }
     .criar_conta{
-        margin-top: -30%;
+       
         width: 320px;
         display: flex;
         flex-direction: column;
