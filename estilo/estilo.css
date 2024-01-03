@@ -82,8 +82,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        justify-content: space-around;
-        
 
     }
     main > .formulario{
@@ -156,7 +154,8 @@
     }
     .Esqueceu_senha{
         margin-left: -190px;
-        
+        margin-top: 5%;
+        margin-bottom: 5%;
         
     }
     .Esqueceu_senha > a:hover{
