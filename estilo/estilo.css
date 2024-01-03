@@ -85,7 +85,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: #E0EFDD;
+        background-color: lightgray;
     }
     main > .formulario{
         margin-top: -10%;
@@ -265,6 +265,7 @@ CONFIGURACAO PARA MOSTRAR OS IDIOMAS NA TELA
     display: flex;
     flex-direction: column;
     z-index: 3;
+    overflow-y: scroll;
     display: none;
 }
 button.idioma{
