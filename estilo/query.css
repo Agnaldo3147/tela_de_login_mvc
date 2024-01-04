@@ -2,14 +2,102 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    section.formulario{
-        width: 420px;
-    }
+    
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media screen and (min-width: 600px)  and (max-width: 992px){
+   main > .formulario{
+       border-radius: 13px 13px 0px 0px;
+        margin-top: 40px;
+        width: 420px;
+        background-color: white;
+        height: 220px;
+    }
+    main > .formulario > form{
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    div.telefone, div.senha {
+        width: 90%;
+        display: flex;
+        align-self: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border-radius: 9px;
+        background-color: var(--c2);
+        margin-bottom: 7px;
+        transition: width .3s, height .3s, padding .3s, margin .3s;
+    }
+    div.telefone{
+        margin-top: 10%;
+    }
+    
+    label{
+        font-size: 1.8vh;
+    }
+    input[type = 'tel'], input[type = 'password']{
+        width: 100%;
+        padding: 12px;
+        border: 1px solid var(--c3);
+        border-radius: 9px;
+        outline-color: var(--c1);
+    }
 
+    
+    input[type = 'submit']{
+        margin-top: 10%;
+        margin-bottom: 10%;
+        padding: 10px;
+        border: none;
+        background-color: var(--verde_claro);
+        color: white;
+        border-radius: 6px;
+        width: 180px;
+        cursor: pointer;
+        font-size: 1.1em;
+    }
+    .classe_esqueceu_senha{
+        background-color: white; 
+        margin-top: -4%;
+        border-radius:0px 0px 10px 10px; 
+        width: 100%;
+    }
+    .Esqueceu_senha{
+        font-size: .85em;
+        margin-bottom: 3%;
+        margin-top: 4%;
+    }
+
+    main > .formulario > form >.Esqueceu_senha > a:hover{
+        color: blue;
+    }
+    .criar_conta{
+        margin-top: 9%;
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    hr{ 
+        width: 90%;
+        height: 1px;
+    }
+    a.criar{
+        
+        text-decoration: none;
+        color: white;
+        background-color: var(--c1);
+        padding: 2%;
+        border-radius: 6px;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -19,7 +107,93 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
+    main > .formulario{
+        border-radius: 16px;
+         margin-top: 70px;
+         width: 480px;
+         height: 264px;
+         background-color: white;
+         
+     }
+     main > .formulario > form{
+         width: 100%;
+         height: 100%;
+         background-color: white;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+     }
+     div.telefone, div.senha {
+         width: 90%;
+         display: flex;
+         align-self: center;
+         margin-top: 8px;
+         margin-bottom: 8px;
+         border-radius: 9px;
+         background-color: var(--c2);
+         margin-bottom: 10px;
+         transition: width .3s, height .3s, padding .3s, margin .3s;
+     }
+     
+     
+     label{
+         font-size: 2.1vh;
+     }
+     input[type = 'tel'], input[type = 'password']{
+         width: 100%;
+         padding: 10px;
+         border: 1px solid var(--c3);
+         border-radius: 9px;
+         outline-color: var(--c1);
+     }
+ 
+     
+     input[type = 'submit']{
+         margin-top: 13%;
+         padding: 7px;
+         border: none;
+         background-color: var(--verde_claro);
+         color: white;
+         border-radius: 6px;
+         width: 210px;
+         cursor: pointer;
+         font-size: 1.1em;
+     }
+     .classe_esqueceu_senha{
+        display: flex;
+        align-items: center;
+         height: 30px;
+         margin-top: 1%;
+         
+     }
+     .Esqueceu_senha{
+         font-size: .88em; 
+     }
+ 
+     .Esqueceu_senha > a:hover{
+         color: blue;
+     }
+     main > .criar_conta{
+         margin-top: 5%;
+         width: 380px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         
+     }
+     
+     hr{ 
+         width: 90%;
+         height: 1px;
+     }
+     a.criar{
+         text-decoration: none;
+         color: white;
+         background-color: var(--c1);
+         padding: 1%;
+         border-radius: 6px;
+     }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */

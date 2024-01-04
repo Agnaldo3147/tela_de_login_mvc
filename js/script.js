@@ -7,6 +7,8 @@ var retirar_def = document.querySelector('.retirar_def')
 var todas_definicoes = document.querySelector('.todas_definicoes')
 var ofuscar_tela = document.querySelector('.ofuscar_tela')
 var fechar_aba = document.querySelector('.fechar_aba')
+var idioma_radio = [...document.querySelector('.idioma_radio')]
+var label = [...document.querySelector('.label')]
 
 
 const FuncaoIdioma = ()=>{
@@ -32,6 +34,14 @@ idioma.addEventListener('click', ()=>{
 
     FuncaoIdioma()
 
+})
+
+idioma_radio.map((ele)=>{
+    ele.addEventListener('click', ()=>{
+        for(a in label){
+            
+        }
+    })
 })
 
 header.addEventListener('click', ()=>{
