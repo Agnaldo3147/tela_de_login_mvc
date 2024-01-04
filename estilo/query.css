@@ -1,8 +1,23 @@
 @charset "UTF-8";
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    
+@media screen and (max-width: 600px) and (orientation: landscape){
+    main{
+        height: auto;
+     }
+     main > .formulario{
+        margin-top: 15%;
+        width: 400px;
+     }
+     .logo_promise{
+        width: 100vw;
+        height: 125vh;
+        
+    }
+    .criar_conta{
+        margin-bottom: 5%;
+        
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

@@ -7,8 +7,19 @@ var retirar_def = document.querySelector('.retirar_def')
 var todas_definicoes = document.querySelector('.todas_definicoes')
 var ofuscar_tela = document.querySelector('.ofuscar_tela')
 var fechar_aba = document.querySelector('.fechar_aba')
-var idioma_radio = document.querySelector('.idioma_radio')
-var radio = document.querySelector('.radio')
+
+/*
+var idioma_radio = [...document.querySelector('.idioma_radio')]
+var radio = [...document.querySelector('.radio')]
+idioma_radio.map((ele)=>{
+    ele.addEventListener('click', ()=>{
+       radio.map((element) => {
+        return element.checked
+       })
+    })
+})
+
+*/
 
 
 const FuncaoIdioma = ()=>{
@@ -35,11 +46,6 @@ idioma.addEventListener('click', ()=>{
     FuncaoIdioma()
 
 })
-
-idioma_radio.addEventListener('click', ()=>{
-       radio.checked
-       
-    })
 
 
 header.addEventListener('click', ()=>{
