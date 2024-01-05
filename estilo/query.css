@@ -209,6 +209,12 @@
          padding: 1%;
          border-radius: 6px;
      }
+     .todas_definicoes{
+        width: 25%;
+        height: auto;
+        left: calc(100vw - 27%); 
+        
+     }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
